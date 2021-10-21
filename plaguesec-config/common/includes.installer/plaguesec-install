@@ -1,0 +1,23 @@
+#!/bin/sh
+
+plaguesec_finish_install() {
+    # Set Plank Theme
+    sudo mv /usr/share/plaguesec-files/dock.theme /usr/share/plank/themes/Default/dock.theme
+    # Wireless Compatibility
+    sudo rm /etc/network/interfaces
+    sudo mv /etc/network/interface /etc/network/interfaces
+    cat >/etc/network/interfaces <<END
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+source /etc/network/interfaces.d/*
+# The loopback network interface
+auto lo
+iface lo inet loopback
+# The primary network interface
+auto wlan0
+END
+    # Update System
+    apt-get update
+}
+
+plaguesec_finish_install

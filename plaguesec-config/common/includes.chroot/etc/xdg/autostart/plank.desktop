@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Plank
+GenericName=Plank
+Comment=Plank for PlagueSecurity OS
+Exec=/usr/bin/bash -c "systemctl --user start plank && /bin/xeventbind resolution /usr/share/plaguesec-files/plank-service.sh"
+Terminal=false
+Type=Application

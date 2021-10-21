@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Run the finish-install script to configure the target system
+cp /finish-install /target/
+cp /plaguesec-install /target/
+in-target /finish-install || true
+in-target /plaguesec-install || true
+rm -f /target/finish-install
+rm -f /target/plaguesec-install
