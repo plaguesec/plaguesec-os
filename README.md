@@ -6,8 +6,8 @@ A Customed Operating System for Security Researchers and Penetration Testers. Ba
 
 
 ### Plague Security Editions
-[Plague Security Docker Edition](https://github.com/plaguesec/PlagueSec-Dockerized/tree/main/plaguesec-docker)  
-[Plague Security Live Build ISO](https://github.com/plaguesec/PlagueSecOS/tree/main/plaguesec-iso)  
+[Plague Security Docker Edition](https://github.com/plaguesec/plaguesec-docker)  
+[Plague Security Live Build ISO](https://github.com/plaguesec/plaguesec-os)  
 Plague Security Raspberry PI Editon (Soon)  
 Plague Security Tablet (Soon)  
 
