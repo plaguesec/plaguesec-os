@@ -1,0 +1,6 @@
+[org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__Fluent-dark
+
+[Desktops]
+Number=2

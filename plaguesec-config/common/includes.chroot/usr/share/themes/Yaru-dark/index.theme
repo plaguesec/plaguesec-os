@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Yaru-Dark
+Comment=The PlagueSec Default Theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+Name=Yaru-Dark
+Type=X-GNOME-Metatheme
+Comment=Ubuntu Yaru theme
+Encoding=UTF-8
+GtkTheme=Yaru
+IconTheme=Yaru
+CursorTheme=Yaru
+CursorSize=24

@@ -1,0 +1,89 @@
+# Live image
+# You always want these:
+kali-linux-core
+kali-desktop-live
+
+# Metapackages
+# You can customize the set of Kali metapackages (groups of tools) to install
+# For the complete list see: https://tools.kali.org/kali-metapackages
+#kali-tools-top10
+kali-linux-default
+#kali-linux-large
+#kali-linux-everything
+
+#Do not remove this packages
+plank
+squashfs-tools
+
+
+# Graphical desktop
+kali-desktop-kde
+
+# Kali applications
+apache-users
+apache2
+apktool
+armitage
+arpwatch
+asleap
+backdoor-factory
+beef-xss
+bluelog
+blueranger
+bluesnarfer
+btscanner
+chkrootkit
+clang
+crunch
+cryptsetup-nuke-password
+curlftpfs
+default-mysql-server
+dnsmap
+dnswalk
+ettercap-graphical
+fcrackzip
+firefox-esr
+foremost
+fping
+gconf-service
+gconf2-common
+gdb
+gobuster
+guymager
+hash-identifier
+hexinject
+javasnoop
+johnny
+joomscan
+jsql-injection
+libfindrtp
+libfreefare-bin
+libgconf-2-4
+libhivex-bin
+libnfc-bin
+lynis
+medusa
+memdump
+mitmproxy
+ncat-w32
+nishang
+ollydbg
+onesixtyone
+openssh-server
+openvas
+oscanner
+php-mysql
+powercat
+rainbowcrack
+rtpflood
+set
+smbmap
+smtp-user-enum
+snmpcheck
+software-properties-common
+thc-ipv6
+wapiti
+webscarab
+webshells
+websploit
+yersinia

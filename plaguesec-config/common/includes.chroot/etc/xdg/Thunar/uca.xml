@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE actions [
+  <!ELEMENT actions (action)+>
+
+  <!ELEMENT action (icon|patterns|name|unique-id|command|description|directories|audio-files|image-files|other-files|text-files|video-files)*>
+
+  <!ELEMENT icon (#PCDATA)>
+  <!ELEMENT command (#PCDATA)>
+  <!ELEMENT patterns (#PCDATA)>
+
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name xml:lang CDATA #IMPLIED>
+
+  <!ELEMENT unique-id (#PCDATA)>
+
+  <!ELEMENT description (#PCDATA)>
+  <!ATTLIST description xml:lang CDATA #IMPLIED>
+  
+  <!ELEMENT startup-notify EMPTY>
+
+  <!ELEMENT directories EMPTY>
+  <!ELEMENT audio-files EMPTY>
+  <!ELEMENT image-files EMPTY>
+  <!ELEMENT other-files EMPTY>
+  <!ELEMENT text-files EMPTY>
+  <!ELEMENT video-files EMPTY>
+]>
+<actions>
+
+  <action>
+    <icon>utilities-terminal-symbolic</icon>
+    <patterns>*</patterns>
+    <name>Open Terminal Here</name>
+    <name xml:lang="ar">فتح الطرفيّة هنا</name>
+    <name xml:lang="ast">Abrir terminal equí</name>
+    <name xml:lang="bg">Отваряне на терминал тук</name>
+    <name xml:lang="bs">otvori terminal ovdje</name>
+    <name xml:lang="ca">Obre un terminal aquí</name>
+    <name xml:lang="cs">Otevřít terminál zde</name>
+    <name xml:lang="da">Åbn terminal her</name>
+    <name xml:lang="de">Terminal hier öffnen</name>
+    <name xml:lang="el">Άνοιγμα τερματικού εδώ</name>
+    <name xml:lang="en_AU">Open Terminal Here</name>
+    <name xml:lang="en_GB">Open Terminal Here</name>
+    <name xml:lang="eo">Malfermi terminalon ĉi tie</name>
+    <name xml:lang="es">Abrir un terminal aquí</name>
+    <name xml:lang="eu">Ireki terminala hemen</name>
+    <name xml:lang="fi">Avaa pääte tässä kansiossa</name>
+    <name xml:lang="fr">Ouvrir un terminal ici</name>
+    <name xml:lang="gl">Abrir un terminal aquí</name>
+    <name xml:lang="he">פתיחת מסוף מכאן</name>
+    <name xml:lang="hi">यहाँ टर्मिनल खोलें</name>
+    <name xml:lang="hu">Terminál megnyitása itt</name>
+    <name xml:lang="id">Buka Terminal Disini</name>
+    <name xml:lang="is">Opna skjáhermi hér</name>
+    <name xml:lang="it">Apri un terminale qui</name>
+    <name xml:lang="ja">ここでターミナルを開く</name>
+    <name xml:lang="ko">이 디렉토리에서 터미널 열기</name>
+    <name xml:lang="lt">Atverti čia terminalą</name>
+    <name xml:lang="lv">Atvērt Termināli Šeit</name>
+    <name xml:lang="ml">ടെര്‍മിനല്‍ ഇവിടെ തുറക്കൂ</name>
+    <name xml:lang="nl">Open hier een terminalvenster</name>
+    <name xml:lang="oc">Dobrir un terminal aicí</name>
+    <name xml:lang="pl">Otwórz w terminalu</name>
+    <name xml:lang="pt">Abra o Emulador de Terminal aqui</name>
+    <name xml:lang="pt_BR">Abrir Terminal Aqui</name>
+    <name xml:lang="ru">Открыть терминал</name>
+    <name xml:lang="sk">Otvoriť túto pozíciu v termináli</name>
+    <name xml:lang="sr">Овде отвори терминал</name>
+    <name xml:lang="sr@latin">Otvorite Terminal ovde</name>
+    <name xml:lang="sv">Öppna terminal här</name>
+    <name xml:lang="tr">Burada Uçbirim Aç</name>
+    <name xml:lang="uk">Відкрити термінал тут</name>
+    <name xml:lang="ur">یہاں ٹرمینل کھولیں</name>
+    <name xml:lang="zh_CN">在这里打开终端</name>
+    <name xml:lang="zh_HK">在此開啟終端機</name>
+    <name xml:lang="zh_TW">在此開啟終端機</name>
+    <unique-id>1-1</unique-id>
+    <command>exo-open --working-directory %f --launch TerminalEmulator</command>
+    <description>Example for a custom action</description>
+    <description xml:lang="ar">مثال لإجراء مخصص</description>
+    <description xml:lang="ast">Exemplu d'una aición personalizada</description>
+    <description xml:lang="bg">Пример за потребителско действие</description>
+    <description xml:lang="bs">Primjer trenutne akcije</description>
+    <description xml:lang="ca">Exemple d'acció personalitzada</description>
+    <description xml:lang="cs">Příklad vlastní akce</description>
+    <description xml:lang="da">Eksempel til en tilpasset handling</description>
+    <description xml:lang="de">Beispiel für eine benutzerdefinierte Aktion</description>
+    <description xml:lang="el">Παράδειγμα προσαρμοσμένης ενέργειας</description>
+    <description xml:lang="en_AU">Example for a custom action</description>
+    <description xml:lang="en_GB">Example for a custom action</description>
+    <description xml:lang="es">Ejemplo de una acción personalizada</description>
+    <description xml:lang="eu">Ekintza pertsonalizatu baten adibidea</description>
+    <description xml:lang="fi">Esimerkki omasta toiminnosta</description>
+    <description xml:lang="fr">Exemple d'une action personnalisée</description>
+    <description xml:lang="gl">Exemplo dunha acción personalizada</description>
+    <description xml:lang="he">דוגמה לפעולה אישית</description>
+    <description xml:lang="hi"> कस्टम बटन का उदाहरण </description>
+    <description xml:lang="hu">Példa egyéni műveletre</description>
+    <description xml:lang="id">Contoh untuk aksi ubahan</description>
+    <description xml:lang="is">Dæmi um sérsniðna aðgerð</description>
+    <description xml:lang="it">Esempio di azione personalizzata</description>
+    <description xml:lang="ja">カスタムアクションの例</description>
+    <description xml:lang="ko">커스텀 동작의 예시</description>
+    <description xml:lang="lt">Pasirinktinio veiksmo pavyzdys</description>
+    <description xml:lang="lv">Pašveidotas darbības piemērs</description>
+    <description xml:lang="ml">കസ്റ്റം ആക്ഷന് ഒരുദാഹരണം</description>
+    <description xml:lang="nl">Voorbeeld van een aangepaste actie</description>
+    <description xml:lang="oc">Exemple d'una accion personalizada</description>
+    <description xml:lang="pl">Przykład niestandardowej akcji</description>
+    <description xml:lang="pt">Exemplo de uma ação personalizada</description>
+    <description xml:lang="pt_BR">Exemplo de uma ação personalizada</description>
+    <description xml:lang="ru">Пример для пользовательского действия</description>
+    <description xml:lang="sk">Príklad vlastnej akcie</description>
+    <description xml:lang="sr">Пример за произвољну радњу</description>
+    <description xml:lang="sr@latin">Primer proizvoljne radnje</description>
+    <description xml:lang="sv">Exempel på en anpassad åtgärd</description>
+    <description xml:lang="tr">Özel bir eylem örneği</description>
+    <description xml:lang="uk">Приклад особливої дії</description>
+    <description xml:lang="ur">کسٹم اکشن کی مثال</description>
+    <description xml:lang="zh_CN">自定义操作的示例</description>
+    <description xml:lang="zh_HK">自訂動作範例</description>
+    <description xml:lang="zh_TW">自訂動作範例</description>
+    <startup-notify/>
+    <directories/>
+  </action>
+
+  <action>
+    <icon>utilities-terminal-symbolic</icon>
+    <patterns>*</patterns>
+    <name>Open Terminal Here</name>
+    <name xml:lang="ar">فتح الطرفيّة هنا</name>
+    <name xml:lang="ast">Abrir terminal equí</name>
+    <name xml:lang="bg">Отваряне на терминал тук</name>
+    <name xml:lang="bs">otvori terminal ovdje</name>
+    <name xml:lang="ca">Obre un terminal aquí</name>
+    <name xml:lang="cs">Otevřít terminál zde</name>
+    <name xml:lang="da">Åbn terminal her</name>
+    <name xml:lang="de">Terminal hier öffnen</name>
+    <name xml:lang="el">Άνοιγμα τερματικού εδώ</name>
+    <name xml:lang="en_AU">Open Terminal Here</name>
+    <name xml:lang="en_GB">Open Terminal Here</name>
+    <name xml:lang="eo">Malfermi terminalon ĉi tie</name>
+    <name xml:lang="es">Abrir un terminal aquí</name>
+    <name xml:lang="eu">Ireki terminala hemen</name>
+    <name xml:lang="fi">Avaa pääte tässä kansiossa</name>
+    <name xml:lang="fr">Ouvrir un terminal ici</name>
+    <name xml:lang="gl">Abrir un terminal aquí</name>
+    <name xml:lang="he">פתיחת מסוף מכאן</name>
+    <name xml:lang="hi">यहाँ टर्मिनल खोलें</name>
+    <name xml:lang="hu">Terminál megnyitása itt</name>
+    <name xml:lang="id">Buka Terminal Disini</name>
+    <name xml:lang="is">Opna skjáhermi hér</name>
+    <name xml:lang="it">Apri un terminale qui</name>
+    <name xml:lang="ja">ここでターミナルを開く</name>
+    <name xml:lang="ko">이 디렉토리에서 터미널 열기</name>
+    <name xml:lang="lt">Atverti čia terminalą</name>
+    <name xml:lang="lv">Atvērt Termināli Šeit</name>
+    <name xml:lang="ml">ടെര്‍മിനല്‍ ഇവിടെ തുറക്കൂ</name>
+    <name xml:lang="nl">Open hier een terminalvenster</name>
+    <name xml:lang="oc">Dobrir un terminal aicí</name>
+    <name xml:lang="pl">Otwórz w terminalu</name>
+    <name xml:lang="pt">Abra o Emulador de Terminal aqui</name>
+    <name xml:lang="pt_BR">Abrir Terminal Aqui</name>
+    <name xml:lang="ru">Открыть терминал</name>
+    <name xml:lang="sk">Otvoriť túto pozíciu v termináli</name>
+    <name xml:lang="sr">Овде отвори терминал</name>
+    <name xml:lang="sr@latin">Otvorite Terminal ovde</name>
+    <name xml:lang="sv">Öppna terminal här</name>
+    <name xml:lang="tr">Burada Uçbirim Aç</name>
+    <name xml:lang="uk">Відкрити термінал тут</name>
+    <name xml:lang="ur">یہاں ٹرمینل کھولیں</name>
+    <name xml:lang="zh_CN">在这里打开终端</name>
+    <name xml:lang="zh_HK">在此開啟終端機</name>
+    <name xml:lang="zh_TW">在此開啟終端機</name>
+    <unique-id>2-2</unique-id>
+    <command>exo-open --working-directory %d --launch TerminalEmulator</command>
+    <description>Open terminal in containing directory</description>
+    <description xml:lang="ar">فتح الطرفية في المجلد المحتوي</description>
+    <description xml:lang="bg">Отворете терминала в съдържаща директория</description>
+    <description xml:lang="cs">Otevřít terminál v adresáři, ve kterém se nacházíte</description>
+    <description xml:lang="da">Åbn terminal i indeholdende mappe</description>
+    <description xml:lang="de">Terminal im aktuellen Verzeichnis öffnen</description>
+    <description xml:lang="en_GB">Open terminal in containing directory</description>
+    <description xml:lang="es">Abrir un terminal en la carpeta contenedora</description>
+    <description xml:lang="fi">Avaa pääte kohteen sisältävässä kansiossa</description>
+    <description xml:lang="fr">Ouvrir le terminal dans le dossier contenant</description>
+    <description xml:lang="gl">Abrir un terminal no cartafol contedor</description>
+    <description xml:lang="he">פתיחת מסוף בתיקייה המכילה</description>
+    <description xml:lang="hi">इस डायरेक्टरी में टर्मिनल खोलें </description>
+    <description xml:lang="hu">Terminál megnyitása a tartalmazó könyvtárban</description>
+    <description xml:lang="id">Buka terminal di direktori yang berisi</description>
+    <description xml:lang="it">Apri terminale nella directory superiore</description>
+    <description xml:lang="ja">ディレクトリ内でターミナルを開く</description>
+    <description xml:lang="ko">포함하는 디렉토리에서 터미널 열기</description>
+    <description xml:lang="lt">Atverti failą vidiniame kataloge</description>
+    <description xml:lang="lv">Atvērt termināli ietvertajā direktorijā</description>
+    <description xml:lang="nl">Open een terminalvenster in de bovenliggende map</description>
+    <description xml:lang="oc">Dobrir un terminal dins lo repertòri contenedor</description>
+    <description xml:lang="pl">Otwiera terminal w bieżącym katalogu</description>
+    <description xml:lang="pt">Abra o terminal no diretório que contém</description>
+    <description xml:lang="pt_BR">Abrir terminal no diretório que contém</description>
+    <description xml:lang="ru">Открыть терминал в этом каталоге.</description>
+    <description xml:lang="sk">Otvoriť terminál v adresári obsahujúcom </description>
+    <description xml:lang="sr">Отворите терминал у садржавајућем директоријуму</description>
+    <description xml:lang="sr@latin">Otvorite Terminal u sadržajni direktorijum</description>
+    <description xml:lang="sv">Öppna terminal i innevarande katalog</description>
+    <description xml:lang="tr">Dizinde Uçbirim Aç</description>
+    <description xml:lang="uk">Відкрити термінал у каталозі цих даних</description>
+    <description xml:lang="ur">اسی ڈاریکٹری مین ٹرمینل کھولیں</description>
+    <description xml:lang="zh_CN">在包含的目录中打开终端</description>
+    <description xml:lang="zh_HK">在包括本項目的目錄開啟終端機</description>
+    <description xml:lang="zh_TW">在包含本項目的目錄開啟終端機</description>
+    <audio-files/>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+    <video-files/>
+  </action>
+
+  <action>
+    <icon>folder-open-symbolic</icon>
+    <name>Open as Root</name>
+    <name xml:lang="ar">فتح كجذر</name>
+    <name xml:lang="ast">Abrir como root</name>
+    <name xml:lang="bg">Отваряне като Администратор</name>
+    <name xml:lang="bs">Otvori kao root</name>
+    <name xml:lang="ca">Obre com a root</name>
+    <name xml:lang="cs">Otevřít jako Root</name>
+    <name xml:lang="da">Åbn som administrator</name>
+    <name xml:lang="de">Als Systemverwalter öffnen</name>
+    <name xml:lang="el">Άνοιγμα ως Διαχειριστής</name>
+    <name xml:lang="en_AU">Open as Root</name>
+    <name xml:lang="en_GB">Open as Root</name>
+    <name xml:lang="es">Abrir con permisos administrativos</name>
+    <name xml:lang="eu">Ireki erro modura</name>
+    <name xml:lang="fi">Avaa pääkäyttäjänä</name>
+    <name xml:lang="fr">Ouvrir en tant que superutilisateur</name>
+    <name xml:lang="gl">Abrir como administrador (root)</name>
+    <name xml:lang="he">פתיחה כמשתמש על</name>
+    <name xml:lang="hi">रुट के रूप में खोलें</name>
+    <name xml:lang="hu">Megnyitás rendszergazdaként</name>
+    <name xml:lang="id">Buka sebagai Root</name>
+    <name xml:lang="is">Opna sem kerfisstjóri (root)</name>
+    <name xml:lang="it">Apri come Root</name>
+    <name xml:lang="ja">Root として開く</name>
+    <name xml:lang="ko">관리자 권한으로 열기</name>
+    <name xml:lang="lt">Atverti kaip Root</name>
+    <name xml:lang="ml">റൂട്ട് ആയി തുറക്കുക</name>
+    <name xml:lang="nl">Openen als beheerder</name>
+    <name xml:lang="oc">Dobrir en tant qu'utilizaire root</name>
+    <name xml:lang="pl">Otwórz jako administrator</name>
+    <name xml:lang="pt">Abrir como Administrador</name>
+    <name xml:lang="pt_BR">Abrir como Root</name>
+    <name xml:lang="ru">Открыть как root</name>
+    <name xml:lang="sk">Otvoriť ako správca</name>
+    <name xml:lang="sr">Отвори као администратор</name>
+    <name xml:lang="sr@latin">Otvori kao root</name>
+    <name xml:lang="sv">Öppna som administratör</name>
+    <name xml:lang="tr">Yönetici haklarıyla aç</name>
+    <name xml:lang="uk">Відкрити як адміністратор</name>
+    <name xml:lang="ur">یہ فولڈر بطور _روٹ کھولیں</name>
+    <name xml:lang="zh_CN">以 Root 身份打开</name>
+    <name xml:lang="zh_HK">以 Root 身分開啟</name>
+    <name xml:lang="zh_TW">以 Root 權限開啟</name>
+    <unique-id>3-3</unique-id>
+    <command>pkexec thunar %f</command>
+    <description>Open the folder with administration privileges</description>
+    <description xml:lang="ar">فتح المجلد بامتيازات المسؤول</description>
+    <description xml:lang="ast">Abre la carpeta con drechos alministrativos</description>
+    <description xml:lang="bg">Отвори папката с права на администратора</description>
+    <description xml:lang="bs">Otvorite direktorij s administratorskim ovlastima</description>
+    <description xml:lang="ca">Obre la carpeta amb permisos d'administració</description>
+    <description xml:lang="cs">Otevřít tuto složku s administrátorskými právy</description>
+    <description xml:lang="da">Åbn mappen med administratorrettigheder</description>
+    <description xml:lang="de">Ordner mit Administratorrechten öffnen</description>
+    <description xml:lang="el">Άνοιγμα του φακέλου με δικαιώματα διαχείρισης</description>
+    <description xml:lang="en_AU">Open the folder with administration privileges</description>
+    <description xml:lang="en_GB">Open the folder with administration privileges</description>
+    <description xml:lang="es">Abrir la carpeta con permisos administrativos</description>
+    <description xml:lang="eu">Ireki karpeta administrazio-pribilegioekin</description>
+    <description xml:lang="fi">Avaa kansio pääkäyttäjän oikeuksilla</description>
+    <description xml:lang="fr">Ouvre le dossier avec les privilèges de l'administrateur</description>
+    <description xml:lang="gl">Abrir o cartafol con privilexios de administración</description>
+    <description xml:lang="he">פתיחת התיקייה עם הרשאות מנהלן</description>
+    <description xml:lang="hi">वास्तविक फाइल हेतु लिंक का अनुगमन करें</description>
+    <description xml:lang="hu">Mappa megnyitása adminisztrátori jogosultságokkal</description>
+    <description xml:lang="id">Buka map dengan ijin administrator</description>
+    <description xml:lang="is">Opna möppuna með kerfisstjórnunarréttindum</description>
+    <description xml:lang="it">Apre la cartella con i privilegi di amministrazione</description>
+    <description xml:lang="ja">管理者権限を持った状態で、対象のフォルダーを開きます</description>
+    <description xml:lang="ko">관리자 권한으로 폴더 열기</description>
+    <description xml:lang="lt">Atverti aplanką administratoriaus teisėmis</description>
+    <description xml:lang="ml">ഫോൾഡർ കാര്യനിർവാഹക അവകാശത്തോടെ തുറക്കുക</description>
+    <description xml:lang="nl">Open deze map met beheerdersrechten</description>
+    <description xml:lang="oc">Dobrís lo dorsièr amb los privilègis de l'administrator</description>
+    <description xml:lang="pl">Otwórz ten katalog z uprawnieniami administratora</description>
+    <description xml:lang="pt">Abrir a pasta com privilégios de administrador</description>
+    <description xml:lang="pt_BR">Abre a pasta com privilégios administrativos</description>
+    <description xml:lang="ru">Открыть папку с привилегиями root</description>
+    <description xml:lang="sk">Otvoriť priečinok ss správcovskými právomocami</description>
+    <description xml:lang="sr">Отворите фасциклу са администраторским правима</description>
+    <description xml:lang="sr@latin">Otvara direktorijum sa administratorskim privilegijama</description>
+    <description xml:lang="sv">Öppna mappen med administrationsrättigheter</description>
+    <description xml:lang="tr">Yönetici ayrıcalıklarıyla klasörü açın</description>
+    <description xml:lang="uk">Відкрити теку з правами адміністратора</description>
+    <description xml:lang="ur">فولڈر کو بطور ایڈمینسٹریٹر کھولیں</description>
+    <description xml:lang="zh_CN">以管理员权限打开文件夹</description>
+    <description xml:lang="zh_HK">以管理員權限開啟資料夾</description>
+    <description xml:lang="zh_TW">以系統管理權限開啟資料夾</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+  <action>
+    <icon>search-symbolic</icon>
+    <name>Find in this folder</name>
+    <name xml:lang="ar">البحث في هذا المجلد</name>
+    <name xml:lang="ast">Guetar nesta carpeta</name>
+    <name xml:lang="bg">Търсене в тази папка</name>
+    <name xml:lang="bs">Nađi u ovom direktoriju</name>
+    <name xml:lang="ca">Cerca en aquesta carpeta</name>
+    <name xml:lang="cs">Hledat v této složce</name>
+    <name xml:lang="da">Find i denne mappe</name>
+    <name xml:lang="de">In diesem Ordner suchen</name>
+    <name xml:lang="el">Αναζήτηση σε αυτόν τον φάκελο</name>
+    <name xml:lang="en_AU">Find in this folder</name>
+    <name xml:lang="en_GB">Find in this folder</name>
+    <name xml:lang="es">Buscar en esta carpeta</name>
+    <name xml:lang="eu">Bilatu karpeta honetan</name>
+    <name xml:lang="fi">Etsi tästä kansiosta</name>
+    <name xml:lang="fr">Rechercher dans ce dossier</name>
+    <name xml:lang="gl">Buscar neste cartafol</name>
+    <name xml:lang="he">חיפוש בתיקייה זו</name>
+    <name xml:lang="hi"> इस फोल्डर में खोजें</name>
+    <name xml:lang="hu">Keresés ebben a mappában</name>
+    <name xml:lang="id">Cari di folder ini</name>
+    <name xml:lang="is">Finna í þessari möppu</name>
+    <name xml:lang="it">Trova in questa cartella</name>
+    <name xml:lang="ja">このフォルダ内を検索</name>
+    <name xml:lang="ko">이 폴더에서 찾기</name>
+    <name xml:lang="lt">Rasti šiame aplanke</name>
+    <name xml:lang="lv">Atrast šajā mapē</name>
+    <name xml:lang="ml">ഈ ഫോള്‍ഡറില്‍ കണ്ടെത്തൂ</name>
+    <name xml:lang="nl">Zoek in deze map</name>
+    <name xml:lang="oc">Recercar dins aqueste dorsièr</name>
+    <name xml:lang="pl">Wyszukaj w tym katalogu</name>
+    <name xml:lang="pt">Localizar nesta pasta</name>
+    <name xml:lang="pt_BR">Pesquisar nesta pasta</name>
+    <name xml:lang="ru">Найти в этом каталоге</name>
+    <name xml:lang="sk">Nájsť v tomto priečinku</name>
+    <name xml:lang="sr">Пронађите у овој фасцикли</name>
+    <name xml:lang="sr@latin">Pronađite u ovom folderu</name>
+    <name xml:lang="sv">Sök i denna mapp</name>
+    <name xml:lang="tr">Bu dizinde bul</name>
+    <name xml:lang="uk">Шукати у цій теці</name>
+    <name xml:lang="ur">اس فولڈر میں ڈھونڈھیں</name>
+    <name xml:lang="zh_CN">在当前文件夹里查找</name>
+    <name xml:lang="zh_HK">在這個資料夾尋找</name>
+    <name xml:lang="zh_TW">在此資料夾尋找</name>
+    <unique-id>4-4</unique-id>
+    <command>catfish --path=%f</command>
+    <description>Search for files within this folder</description>
+    <description xml:lang="ar">البحث عن الملفات داخل هذا المجلد</description>
+    <description xml:lang="ast">Guetar ficheros dientro d'esta carpeta</description>
+    <description xml:lang="bg">Търсене за файлове в тази папка</description>
+    <description xml:lang="bs">Traži datoteke u ovom direktoriju</description>
+    <description xml:lang="ca">Cerca fitxers en aquesta carpeta</description>
+    <description xml:lang="cs">Hledat soubory v této složce</description>
+    <description xml:lang="da">Søg efter filer i denne mappe</description>
+    <description xml:lang="de">Nach Dateien in diesem Ordner suchen</description>
+    <description xml:lang="el">Αναζήτηση αρχείων μέσα σε αυτόν τον φάκελο</description>
+    <description xml:lang="en_AU">Search for files within this folder</description>
+    <description xml:lang="en_GB">Search for files within this folder</description>
+    <description xml:lang="es">Buscar archivos dentro de esta carpeta</description>
+    <description xml:lang="eu">Bilatu fitxategiak karpeta honetan</description>
+    <description xml:lang="fi">Etsi tiedostoja tästä kansiosta</description>
+    <description xml:lang="fr">Rechercher des fichiers dans ce dossier</description>
+    <description xml:lang="gl">Buscar ficheiros dentro deste cartafol</description>
+    <description xml:lang="he">חיפוש קבצים בתיקייה זו</description>
+    <description xml:lang="hi">फाइल्स को इसी फोल्डर के अंदर खोजें </description>
+    <description xml:lang="hu">Fájlok keresése ebben a mappában</description>
+    <description xml:lang="id">Cari berkas dalam folder ini</description>
+    <description xml:lang="is">Leita að skrám í þessari möppu</description>
+    <description xml:lang="it">Cerca file all'interno di questa cartella</description>
+    <description xml:lang="ja">このフォルダ内のファイルを検索</description>
+    <description xml:lang="ko">이 폴더에서 파일 찾기</description>
+    <description xml:lang="lt">Ieškoti failų šiame aplanke</description>
+    <description xml:lang="lv">Meklēt datnes šajā mapē</description>
+    <description xml:lang="ml">ഫയലുകള്‍ക്കായി ഈ ഫോള്‍ഡറില്‍ തിരയൂ</description>
+    <description xml:lang="nl">Zoek naar bestanden in deze map</description>
+    <description xml:lang="oc">Recercar de fichièrs dins aqueste dorsièr</description>
+    <description xml:lang="pl">Wyszukuje pliki we wskazanym katalogu</description>
+    <description xml:lang="pt">Procurar ficheiros dentro desta pasta</description>
+    <description xml:lang="pt_BR">Pesquisar por arquivos dentro desta pasta</description>
+    <description xml:lang="ru">Поискать в файлах внутри этого каталога</description>
+    <description xml:lang="sk">Vyhľadať súbory v tomto priečinku</description>
+    <description xml:lang="sr">Потражите датотеке у овој фасцикли</description>
+    <description xml:lang="sr@latin">Pretražite fajlove u ovom folderu</description>
+    <description xml:lang="sv">Sök efter filer i denna mapp</description>
+    <description xml:lang="tr">Bu dizin içerisinde dosyaları ara</description>
+    <description xml:lang="uk">Шукати файли у цій теці</description>
+    <description xml:lang="ur">فولڈر کے اندر فائیلس کو کھوجیں</description>
+    <description xml:lang="zh_CN">搜索当前文件夹下的文件</description>
+    <description xml:lang="zh_HK">在此資料夾搜尋檔案</description>
+    <description xml:lang="zh_TW">在此資料夾搜尋檔案</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+  <action>
+    <icon>document-print-symbolic</icon>
+    <name>Print file(s)</name>
+    <name xml:lang="ar">طباعة ملف (ملفات)</name>
+    <name xml:lang="bg">Печат на файлове</name>
+    <name xml:lang="cs">Vytisknout soubor(y)</name>
+    <name xml:lang="da">Udskriv fil(er)</name>
+    <name xml:lang="de">Datei(en) drucken</name>
+    <name xml:lang="en_GB">Print file(s)</name>
+    <name xml:lang="es">Imprimir archivos</name>
+    <name xml:lang="fi">Tulosta tiedosto(t)</name>
+    <name xml:lang="fr">Imprimer le(s) fichier(s)</name>
+    <name xml:lang="gl">Imprimir o(s) ficheiro(s)</name>
+    <name xml:lang="he">הדפסת קבצים</name>
+    <name xml:lang="hi">फाइल (लों) को मुद्रित करें</name>
+    <name xml:lang="hu">Fájl(ok) nyomtatása</name>
+    <name xml:lang="id">Cetak berkas</name>
+    <name xml:lang="it">Stampa file(s)</name>
+    <name xml:lang="ja">ファイルを印刷する</name>
+    <name xml:lang="ko">파일(들) 프린트하기</name>
+    <name xml:lang="lt">Spausdinti failą(-us)</name>
+    <name xml:lang="lv">Izvadīt datni(es)</name>
+    <name xml:lang="nl">Druk bestand(en) af</name>
+    <name xml:lang="oc">Imprimir fichièr(s)</name>
+    <name xml:lang="pl">Wydrukuj plik(i)</name>
+    <name xml:lang="pt">Imprimir ficheiros(s)</name>
+    <name xml:lang="pt_BR">Imprimir arquivo(s)</name>
+    <name xml:lang="ru">Распечатать файл(ы)</name>
+    <name xml:lang="sk">Tlač súboru/súborov </name>
+    <name xml:lang="sr">Штампај датотеку</name>
+    <name xml:lang="sr@latin">Odštampajte fajl(ove)</name>
+    <name xml:lang="sv">Skriv ut fil(er)</name>
+    <name xml:lang="tr">Dosya(ları) yazdır</name>
+    <name xml:lang="uk">Надрукувати файли</name>
+    <name xml:lang="ur">فائیل (س)  کو پرنت کریں</name>
+    <name xml:lang="zh_CN">打印文件(s)</name>
+    <name xml:lang="zh_HK">打印檔案</name>
+    <name xml:lang="zh_TW">列印檔案</name>
+    <unique-id>5-5</unique-id>
+    <command>thunar-print %F</command>
+    <description>Send one or multiple files to the default printer</description>
+    <description xml:lang="ar">إرسال ملف أو عدة ملفات إلى الطابعة الافتراضية</description>
+    <description xml:lang="bg">Изпратете един или няколко файла до принтера по подразбиране</description>
+    <description xml:lang="cs">Odeslat jeden nebo vícero souborů na výchozí tiskárnu</description>
+    <description xml:lang="da">Send en eller flere filer til standardprinteren</description>
+    <description xml:lang="de">Eine oder mehrere Dateien an den Standarddrucker senden</description>
+    <description xml:lang="en_GB">Send one or more files to the deafult printer</description>
+    <description xml:lang="es">Enviar uno o más archivos a la impresora predeterminada</description>
+    <description xml:lang="fi">Lähetä yksi tai usempi tiedosto oletustulostimelle</description>
+    <description xml:lang="fr">Envoyer un ou plusieurs fichiers à l'imprimante par défaut</description>
+    <description xml:lang="gl">Enviar un ou máis ficheiros á impresora predeterminada</description>
+    <description xml:lang="he">שליחת קובץ אחד או יותר למדפסת בררת המחדל</description>
+    <description xml:lang="hi">डिफ़ॉल्ट प्रिंटर को एक या एक से ज़्यादा फाइल भेजें </description>
+    <description xml:lang="hu">Egy vagy több fájl küldése az alapértelmezett nyomtatóra</description>
+    <description xml:lang="id">Kirim satu atau beberapa berkas ke printer bawaan</description>
+    <description xml:lang="it">Invia uno o più file alla stampante predefinita</description>
+    <description xml:lang="ja">一つ又は複数のファイルをデフォルトのプリンターに送る</description>
+    <description xml:lang="ko">하나 이상의 파일 시본 프린터기에 보내기</description>
+    <description xml:lang="lt">Siųsti vieną ar kelis failus į numatytąjį spausdintuvą</description>
+    <description xml:lang="lv">Nosūtīt vienu vai vairāk failus uz noklusējuma printeri</description>
+    <description xml:lang="nl">Druk één of meer bestanden naar de standaard printer</description>
+    <description xml:lang="oc">Enviar un o mai d’un fichièr a l’imprimenta per defaut</description>
+    <description xml:lang="pl">Przesyła jeden lub wiele plików do domyślnej drukarki</description>
+    <description xml:lang="pt">Envie um ou vários ficheiros para a impressora predefinida</description>
+    <description xml:lang="pt_BR">Enviar um ou múltiplos arquivos para a impressora padrão</description>
+    <description xml:lang="ru">Отправить файл(ы) на основной принтер по умолчанию</description>
+    <description xml:lang="sk">Odoslanie jedného alebo viacerých súborov na predvolenú tlačiareň </description>
+    <description xml:lang="sr">Пошаљите једну или више датотека подразумеваном штампачу</description>
+    <description xml:lang="sr@latin">Pošaljite jedan ili više fajlova na zadati štampač</description>
+    <description xml:lang="sv">Skicka en eller flera filer till standardskrivaren</description>
+    <description xml:lang="tr">Yazıcıya bir veya daha fazla dosya gönder</description>
+    <description xml:lang="uk">Надіслати один або декілька файлів на типовий принтер</description>
+    <description xml:lang="ur">ایک یا زاید فائیلس کو ڈیفالٹ پرینڑر میں بھیجیں</description>
+    <description xml:lang="zh_CN">发送文件到默认打印机</description>
+    <description xml:lang="zh_HK">傳送一個或多個檔案到打印機</description>
+    <description xml:lang="zh_TW">傳送一個或多個檔案到預設印表機</description>
+    <patterns>*.asc;*.brf;*.css;*.doc;*.docm;*.docx;*.dotm;*.dotx;*.fodg;*.fodp;*.fods;*.fodt;*.gif;*.htm;*.html;*.jpe;*.jpeg;*.jpg;*.odb;*.odf;*.odg;*.odm;*.odp;*.ods;*.odt;*.otg;*.oth;*.otp;*.ots;*.ott;*.pbm;*.pdf;*.pgm;*.png;*.pnm;*.pot;*.potm;*.potx;*.ppm;*.ppt;*.pptm;*.pptx;*.rtf;*.shtml;*.srt;*.text;*.tif;*.tiff;*.txt;*.xbm;*.xls;*.xlsb;*.xlsm;*.xlsx;*.xltm;*.xltx;*.xpm;*.xwd</patterns>
+    <image-files/>
+    <other-files/>
+    <text-files/>
+  </action>
+
+</actions>
