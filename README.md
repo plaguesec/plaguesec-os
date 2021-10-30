@@ -90,7 +90,9 @@ You can see all the available command-line options by doing `--help`:
   --clean
   --help
 ```
-
+#### Temporary Download Link
+[XFCE](https://drive.google.com/file/d/1-msJ9-MPiiMIAnC9G22NdEEiGdS8GByy/view?usp=sharing)  
+[KDE](https://drive.google.com/file/d/1nlII4wAhVv6hNKnIGtyCdX2usNAT0iAh/view?usp=sharing)
 
 #### References
 [Custom ISO](https://www.kali.org/docs/development/live-build-a-custom-kali-iso/)
