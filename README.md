@@ -61,7 +61,7 @@ $ sudo apt update
 ```
 We need to install requirements to build the operating system and clone the plaguesec-os repository
 ```
-$ sudo apt install -y git live-build cdebootstrap devscripts simple-cdd
+$ sudo apt install -y git live-build cdebootstrap devscripts
 $ git clone https://github.com/PlagueSec/plaguesec-os.git
 $ cd plaguesec-os/
 ```
