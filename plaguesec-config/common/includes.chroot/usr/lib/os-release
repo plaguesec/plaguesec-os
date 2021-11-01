@@ -1,0 +1,11 @@
+PRETTY_NAME="Plague Security GNU/Linux"
+NAME="Plague Security GNU/Linux"
+ID=plaguesec
+VERSION="2.0"
+VERSION_ID="2.0"
+VERSION_CODENAME="rolling 2.0"
+ID_LIKE=debian
+ANSI_COLOR="1;31"
+HOME_URL="https://plaguesec.com"
+SUPPORT_URL="https://plaguesec.com"
+BUG_REPORT_URL="https://plaguesec.com"

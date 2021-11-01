@@ -1,0 +1,9 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Greeter]
+Theme=com.github.vinceliuice.Fluent-light
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/backgrounds/kali/v1.png
+
