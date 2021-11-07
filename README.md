@@ -21,6 +21,63 @@ Plague Security Tablet (Soon)
 - KDE
 - XFCE
 
+# Building
+
+## Release Package
+You can download the release package which is more stable than the updated repository, after downloading just follow the instruction below but exclude `git clone https://github.com/PlagueSec/plaguesec-os.git` command since we already have the release downloaded.
+
+### Instruction for building an ISO on a Kali System
+Download the Release File
+```
+$ wget https://github.com/plaguesec/plaguesec-os/archive/refs/tags/vx.x.x.zip
+$ unzip plaguesec-os-x.x.x.zip
+$ cd plaguesec-os-x.x.x
+```
+Now we need to install the requirements to build the operating system
+```
+$ sudo apt install -y git live-build simple-cdd cdebootstrap curl
+```
+Now let us Build The Operating System
+```
+$ sudo ./build.sh --variant (bugbounty, everything, kde, xfce) -v 
+```
+### Instruction for building an ISO on a Debian Based System
+
+Update the System
+```
+$ sudo apt update
+```
+Download the Required Packages from http.kali.org  
+Note: You may need to check that kali-archive-keyring_20YY.X_all.deb & live-build_20YYMMDD_all.deb are the latest files.
+```
+$ wget https://http.kali.org/pool/main/k/kali-archive-keyring/kali-archive-keyring_2020.2_all.deb
+$ wget https://http.kali.org/kali/pool/main/l/live-build/live-build_20210407_all.deb
+```
+Now we need to install the requirements to build the operating system
+```
+$ sudo apt install -y git live-build simple-cdd cdebootstrap curl
+$ sudo dpkg -i kali-archive-keyring_2020.2_all.deb
+$ sudo dpkg -i live-build_20210407_all.deb
+```
+with the environment all prepared, we need to setup the build-script profile and Download the plaguesec-os Release
+```
+$ cd /usr/share/debootstrap/scripts/
+$ (echo "default_mirror http://http.kali.org/kali"; sed -e "s/debian-archive-keyring.gpg/kali-archive-keyring.gpg/g" sid) > /tmp/kali
+$ sudo mv /tmp/kali .
+$ sudo ln -s kali kali-rolling
+
+$ cd ~/
+$ wget https://github.com/plaguesec/plaguesec-os/archive/refs/tags/vx.x.x.zip
+$ unzip plaguesec-os-x.x.x.zip
+$ cd plaguesec-os-x.x.x
+```
+Then now we are going to build the system
+```
+$ sudo ./build_non_kali.sh --variant (bugbounty, everything, kde, xfce) -v 
+```
+
+
+## Updated Package (Unstable) 
 ### Instruction for building an ISO on a Debian Based System
 Update the System
 ```
