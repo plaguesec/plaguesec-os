@@ -21,8 +21,6 @@ Plague Security Tablet (Soon)
 - KDE
 - XFCE
 
-# Building
-
 ## Release Package
 You can download the release package which is more stable than the updated repository, after downloading just follow the instruction below but exclude `git clone https://github.com/PlagueSec/plaguesec-os.git` command since we already have the release downloaded.
 
