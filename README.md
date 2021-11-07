@@ -94,9 +94,11 @@ You can see all the available command-line options by doing `--help`:
 [XFCE](https://drive.google.com/file/d/1-msJ9-MPiiMIAnC9G22NdEEiGdS8GByy/view?usp=sharing)  
 [KDE](https://drive.google.com/file/d/1nlII4wAhVv6hNKnIGtyCdX2usNAT0iAh/view?usp=sharing)
 
+#### Contributing
+Contributions are welcome create a pull request to this repo and I will review your code. Please consider to submit your pull request to the dev branch. Please make sure you clone in a linux machine since using windows might break the permissions of each file. Thank you!
+
 #### References
 [Custom ISO](https://www.kali.org/docs/development/live-build-a-custom-kali-iso/)
-
 
 #### Official Platforms
 [Plague Security Official Website](https://plaguesec.com)
