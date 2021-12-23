@@ -18,3 +18,4 @@ kali-desktop-xfce
 #Do not remove this packages
 plank
 squashfs-tools
+gnome-keyring
