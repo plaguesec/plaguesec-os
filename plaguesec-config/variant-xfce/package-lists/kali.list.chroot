@@ -14,6 +14,7 @@ kali-linux-default
 #Do not remove this packages
 plank
 squashfs-tools
+gnome-keyring
 
 # Graphical desktop
 kali-desktop-xfce
