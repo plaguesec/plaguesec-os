@@ -10,7 +10,7 @@ kali-desktop-live
 #kali-tools-top10
 #kali-linux-default
 #kali-linux-large
-kali-linux-everything
+#kali-linux-everything
 
 #Do not remove this packages
 plank
